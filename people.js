@@ -1,0 +1,68 @@
+export default [
+  {
+    firstName: "Saphirya",
+    lastName: "Mackimeloh",
+  },
+  {
+    firstName: "Surman",
+    lastName: "Schweik",
+  },
+  {
+    firstName: "Iwsek",
+    lastName: "Silverstein",
+  },
+  {
+    firstName: "Vedimir",
+    lastName: "Coots",
+  },
+  {
+    firstName: "Lurdes",
+    lastName: "Palizze",
+  },
+  {
+    firstName: "!",
+    lastName: ".!",
+  },
+];
+
+export const nestedObject = {
+  name: "Kamil",
+  children: [
+    {
+      name: "Zosia",
+    },
+    {
+      name: "Krysia",
+      name2: "Barbara",
+      children: [
+        {
+          name: "Basia",
+          children: [
+            {
+              name: "Monika",
+              name2: "Viola",
+              children: [
+                {
+                  name: "Mateusz",
+                },
+                {
+                  name: "Sebastian",
+                  name2: "August",
+                  name3: "Franciszek",
+                  children: [
+                    { name: "Alex" },
+                    { name: "Stasio" },
+                    {
+                      name: "Paulina",
+                      children: [{ name: "Kuba" }, { name: "Kacper" }],
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
+        },
+      ],
+    },
+  ],
+};
