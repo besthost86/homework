@@ -17,6 +17,6 @@ export default function getAllNames(item, done) {
     let lastIndex = keys.length - 1;
     keys.filter(k => k.includes("name")).forEach(name => names.push(obj[name]));
     finalArray.push(names.join(" "));
-    keys[lastIndex] === "children" ? getAllNames(obj["children"], false) : false;
+    Array.isArray(obj[keys[lastIndex]]) ? getAllNames(obj[keys[lastIndex]], false) : false;
   }
 }
